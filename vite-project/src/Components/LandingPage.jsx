@@ -57,7 +57,7 @@ function LandingPage()
 
   return (
     <section className="min-h-screen w-[100%] bg-[#e3b8b8] relative overflow-hidden">
-      <div className="h-[60vh] w-full bg-[#151515] rounded-b-[2.5rem] grid place-content-center relative">
+      <div className="h-[60vh] w-full bg-[#151515] grid place-content-center relative">
         <div 
             className="w-[80vw] h-[20rem] flex flex-col items-center justify-center bg-[#C73659] rounded-[3rem] cursor-none font-Serif"
             onMouseEnter={() => setIsHovering(true)}
