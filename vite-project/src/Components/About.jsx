@@ -22,7 +22,7 @@ function About() {
           setIsVisible(true);
         }
       },
-      { threshold: 0.8 }
+      { threshold: 0.7 }
     );
 
     if (imageRef.current) {
@@ -36,7 +36,7 @@ function About() {
     };
   }, []);
 
-  const handleTextClick = (textKey) => {
+  const handleTextMouseOver = (textKey) => {
     let iteration = 0;
     clearInterval(interval);
 
@@ -70,32 +70,33 @@ function About() {
       <p className="w-[100%] h-[85vh] text-[3.5rem] text-[#C73659]">
         <span
           className="block px-2 py-[1rem] border-b-[3px] border-dashed border-[#ff2e8c] mx-8"
-          onMouseOver={() => handleTextClick('text1')}
+          onMouseOver={() => handleTextMouseOver('text1')}
         >
           {text.text1}
         </span>
         <span
           className="block px-2 py-[1rem] border-b-[3px] border-dashed border-[#ff2e8c] mx-8"
-          onMouseOver={() => handleTextClick('text2')}
+          onMouseOver={() => handleTextMouseOver('text2')}
         >
           {text.text2}
         </span>
         <span
           className="block px-2 py-[1rem] border-b-[3px] border-dashed border-[#ff2e8c] mx-8"
-          onMouseOver={() => handleTextClick('text3')}
+          onMouseOver={() => handleTextMouseOver('text3')}
         >
           {text.text3}
         </span>
         <span
           className="block px-2 py-[1rem] border-b-[3px] border-dashed border-[#ff2e8c] mx-8"
-          onMouseOver={() => handleTextClick('text4')}
+          onMouseOver={() => handleTextMouseOver('text4')}
         >
           {text.text4}
         </span>
       </p>
+      
       <img
         src={Figurine}
-        className="absolute top-[40%] w-[25rem] left-[76%]"
+        className={`absolute top-[40%] w-[25rem] left-[76%] transition-opacity duration-1000 ease-in-out ${isVisible ? 'opacity-100' : 'opacity-0'}`}
         ref={imageRef}
       />
     </section>
