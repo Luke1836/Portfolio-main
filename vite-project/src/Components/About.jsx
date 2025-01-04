@@ -14,7 +14,7 @@ function About() {
   const alpahbets = "ABCDEFGHIJKLMNOPQRSTUVWXY";
   let interval = null;
 
-  // Intersection Observer to detect if the image section is in view
+  // To detect if the image section is in view
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -65,6 +65,7 @@ function About() {
     }, 20);
   };
 
+  
   return (
     <section className="min-h-screen w-[100%] bg-[#151515] relative overflow-hidden">
       <p className="w-[100%] h-[85vh] text-[3.5rem] text-[#C73659]">
