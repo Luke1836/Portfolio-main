@@ -59,11 +59,11 @@ function LandingPage()
     <section className="min-h-screen w-[100%] bg-[#e3b8b8] relative overflow-hidden">
       <div className="h-[60vh] w-full bg-[#151515] rounded-b-[2.5rem] grid place-content-center relative">
         <div 
-            className="w-[80vw] h-[20rem] flex flex-col items-center justify-center bg-[#C73659] rounded-[3rem] cursor-none"
+            className="w-[80vw] h-[20rem] flex flex-col items-center justify-center bg-[#C73659] rounded-[3rem] cursor-none font-Serif"
             onMouseEnter={() => setIsHovering(true)}
             onMouseLeave={() => setIsHovering(false)}
         >
-          <span className="text-center whitespace-nowrap text-[2.5rem] block neon-text font-semibold tracking-wider font-Noto">Hi!</span>
+          <span className="text-center whitespace-nowrap text-[2.5rem] block neon-text font-semibold tracking-wider">Hi!</span>
           <span className="text-center text-[2.5rem] font-bold text-slate-100">
             I am <span className="text-[#FFF455]">George Kurian Thomas</span>
           </span>

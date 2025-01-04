@@ -1,6 +1,6 @@
 
 /* ------------ Fonts ------------- */
-@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Sail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Imperial+Script&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Sail&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -57,45 +57,3 @@
       opacity: 0;
     }
 }
- 
-/* Self-writing text effect */
-.writing-text {
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: 3px solid #000;
-    color: #000;
-    animation: typing 4s steps(30, end), blink 0.6s step-end infinite alternate;
-}
-  
-/* Shiny particles */
-.writing-text:hover .particles {
-    display: block;
-}
-  
-.particles {
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-    display: none;
-}
-  
-.particles::before,
-.particles::after {
-    content: '';
-    position: absolute;
-    width: 0.5rem;
-    height: 0.5rem;
-    background: radial-gradient(circle, #fff, transparent);
-    border-radius: 50%;
-    animation: shimmer 1s ease-out infinite;
-}
-  
-.particles::before {
-    top: 0;
-    left: 50%;
-}
-  
-.particles::after {
-    top: 50%;
-    left: 0;
-}  
